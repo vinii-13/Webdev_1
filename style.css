@@ -1,0 +1,662 @@
+/*margin and padding for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body{
+    background-color: #F5F4ED;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*...............................PARTNERS......................................................................*/
+.partnered-with{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    display: grid;
+    text-align: center;
+    
+}
+.text {
+    font-weight:bolder;
+    font-family: 'Lucida sans';
+    color: #f44336;
+
+}
+
+.partners img{
+    border-radius: 50px ;
+    width: 100px;
+    height: 100px;
+}
+.partners{
+    display: grid;
+    margin-top: 40px;    
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 40px;
+}
+
+
+/*...............................ABOUT-US......................................................................*/
+.aboutt{
+    margin-top: 2px;
+    margin-bottom: 0%;
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+    /* responsive behaviour */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+
+}
+.a_card{
+    position: relative;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.18);
+    padding: 16px;
+    margin: 90px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(200px,1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.a_card-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.2),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.a_card-img img{
+    width: 100%;
+    transform: scale(1.2);
+}
+p{
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.a_name{
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.9s ;
+}
+button:hover {
+    opacity: 0.8;
+}
+button i{
+    color: #ffffff;
+    font-size: 1.4em;
+    transform: translate(4px, 1px);
+}
+/* social media colors*/
+button.github{
+    background-color: #24292e;
+}
+button.twitter{
+    background-color: #1da1f2;
+}
+button.pinterest{
+    background-color: #d3263a;
+}
+
+/*..............................................................................................................................................................*/
+/* cards trial 3=successful*/
+.adventure-cards{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.cards{
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 40px;
+    margin: 3%;
+}
+.card{
+    background-color: #F5F4ED;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85, 0 100%);
+    
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    opacity: 0.7;
+
+}
+/*........................................REGISTER-BUTTON.......................................................................*/
+.register-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+   /* border: 1px solid #fff; */
+    padding: 12px 12px;
+    font-size: 15px;
+   /* background-color: #f44336; */
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+/* hover effect is used to change the display when cursor is placed on the element*/
+.register-btn:hover{
+    color: #fff;
+    transition: top 0.5s, opacity 0.5s;
+}
+.register-btn::after{
+    content: '';
+    /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: top 0.5s,opacity 0.5s;
+}
+.register-btn:hover::after{
+    width: 100%;
+    top: 50%;
+    opacity: 1;
+}
+/*.................................................................................................*/
+.card1>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #fff,
+        #f44336      
+    );
+}
+.card2>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #fff,
+        #f44336      
+    );
+}
+.card3>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #fff,
+        #f44336      
+    );
+}
+.card4>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #fff,
+        #f44336      
+    );
+}
+.card5>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #fff,
+        #f44336      
+    );
+}
+.card6>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #fff,
+        #f44336      
+    );
+}
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: #000000;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/**------------------------------------------------------------------*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+nav{
+    display: flex;
+    padding: 3% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex: 2;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+.nav-links ul li {
+    color: #000000;
+    text-decoration: none;
+    font-size: px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+i{
+    margin-right: 8px;
+}
+.nav-links ul li a:hover{
+   color: #fff;
+   transition: top 0.5s, opacity 0.5s;
+}
+.nav-links ul li::after{
+    content: '';
+    /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
+    width: 95%;
+    height: 50px;
+    border-radius: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: top 0.5s,opacity 0.5s;
+}
+.nav-links ul li:hover{
+    color: #f44336;
+ }
+.nav-links ul li:hover::after{
+    width: 100%;
+    top: 50%;
+    opacity: 1;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    text-align: left;
+    
+}
+/*bg of textbox */
+.text-box{
+    position: absolute;
+    max-width: 550px;
+    padding: 50px;
+    background: rgba(225,225,225,.8);
+    box-shadow: 0 5px 15px rgba(0,0,0, .3);
+    border-radius: 40px;
+    border: 2px solid;
+
+}
+.text-box h1{
+    font-size: 40px;
+    color: #000000;
+    border: px solid;
+    
+}
+
+.text-box h4{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: black;
+}
+.thick{
+    font-weight: 20;
+}
+.normal{
+    font-weight: 900;
+}
+.cu-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+   /* border: 1px solid #fff; */
+    padding: 12px 12px;
+    font-size: 15px;
+   /* background-color: #f44336; */
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+/* hover effect is used to change the display when cursor is placed on the element*/
+.cu-btn:hover{
+    color: #fff;
+    transition: top 0.5s, opacity 0.5s;
+}
+.cu-btn::after{
+    content: '';
+    /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: top 0.5s,opacity 0.5s;
+}
+.cu-btn:hover::after{
+    width: 100%;
+    top: 50%;
+    opacity: 1;
+}
+
+nav .fa{
+    opacity: 0;
+} 
+
+
+/*.................................................................testimonials take 2=successful................................................................*/
+
+.containerr{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4ED;
+}
+.testimonial{
+    position: relative;
+    max-width: 700px;
+    border-radius: 50px 0 50px 0;
+    height: 300px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 30px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.image{
+    padding-bottom: 10px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+    transform: translate(150%, 0%);
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide p{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.quote-icon{
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+
+    padding-top: 5px;
+    width: 170px;
+    object-fit: cover;
+    text-align: center;
+    transform: translate(150%, 0%);
+}
+
+.detailss{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+
+}
+.job{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    
+}
+/* ..............................................................................FOOTER................................................................................*/
+footer{
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: row wrap;
+
+}
+@media(max-height:800px)
+{
+    footer{
+        position: static;
+    }
+}
+.footer-distributed{
+    background-color: rgba(49, 45, 26, 1);
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align:left;
+    font: bold 16px sans-serif;
+    padding: 50px 60px 60px 50px;
+    margin-top: 80px;
+
+}
+.footer-left, .footer-center, .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-left{
+    width: 35%;
+}
+.footer-distributed h3{
+    color: #fff;
+    font: normal 36px 'Arial', cursive;
+    margin: 0;
+}
+.footer-links{
+    color: #fff;
+    margin: 20px 0 12px;
+}
+.footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-company-name{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-center{
+    width: 35%;
+
+}
+.footer-center i{
+    background-color: #33383b;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+
+}
+.footer-center i.fa-envelop{
+    font-size: 17px;
+    line-height: 38px;
+    
+}
+.footer-center p{
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer-center p a{
+    color: #e0ac1a;
+    text-decoration: none;
+}
+.footer-right{
+    width: 30%;
+}
+.footer-company-about{
+    line-height: 20px;
+    color: #92999f;
+    font-family: 13px;
+    font-weight: normal;
+    margin: 0;
+
+}
+.footer-company-about span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.footer-icons{
+    margin-top: 35px;
+}
+.footer-icons i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 4px;
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-icons i:hover{
+    background-color: #f44336;
+}
+.footer-links a:hover{
+    color:#f44336;
+
+}
+@media(max-width: 880px){
+    .footer-links, .footer-center, .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-center i{
+        margin-left: 0;
+    }
+}
+.footer-logo{
+    height: 90px;
+    width: 90px;
+    padding-bottom: 10px;
+    box-align: left;
+}
