@@ -53,6 +53,9 @@ body {
 }
 
 /*...............................ABOUT-US......................................................................*/
+.About-Us{
+  margin-top: 5%;
+}
 .a1 {
   padding-top: 30px;
   font-size: 40px;
@@ -598,6 +601,7 @@ flex-direction: column;
   color: #fff;
   font: normal 36px "Arial", cursive;
   margin: 0;
+  text-align: center;
 }
 .footer-links {
   color: #fff;
@@ -708,4 +712,5 @@ flex-direction: column;
   width: 90px;
   padding-bottom: 10px;
   box-align: left;
+  padding-left: 40%;
 }
