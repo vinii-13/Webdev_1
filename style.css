@@ -12,8 +12,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  /*
-  background-image: url(images/spiral\ background.svg); */
+  
+  background-image: url(images/spiral\ background.svg); 
 }
 
 body {
@@ -286,7 +286,6 @@ nav .fa {
 /*..............................................................................................................................................................*/
 /* cards trial 3=successful*/
 .adventure-cards {
-    background-image: url(images/spiral\ background.svg);
   margin-top: 10px;
   width: 100%;
   text-align: center;
@@ -330,46 +329,7 @@ img {
   border-radius: 20px;
   opacity: 0.7;
 }
-/*........................................REGISTER-BUTTON.......................................................................*/
-.register-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  /* border: 1px solid #fff; */
-  padding: 12px 12px;
-  font-size: 15px;
-  /* background-color: #f44336; */
-  position: relative;
-  cursor: pointer;
-  border-radius: 30px;
-}
-/* hover effect is used to change the display when cursor is placed on the element*/
-.register-btn:hover {
-  color: #fff;
-  transition: top 0.5s, opacity 0.5s;
-}
-.register-btn::after {
-  content: "";
-  /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
-  width: 100%;
-  height: 40px;
-  border-radius: 12px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  opacity: 0;
-  background: #f44336;
-  display: block;
-  margin: auto;
-  transition: top 0.5s, opacity 0.5s;
-}
-.register-btn:hover::after {
-  width: 100%;
-  top: 50%;
-  opacity: 1;
-}
+
 /*.................................................................................................*/
 .card1 > .container:after {
   background-image: linear-gradient(135deg, #fff, #f44336);
@@ -403,6 +363,34 @@ img {
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+}
+.b-register{
+  border: 1px solid;
+  border-color: #f0582b;
+  font-size: 15px;
+  outline: #f0582b;
+  position: relative;
+  cursor: pointer;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  width: 150px;
+  height: 50px;
+  transform: translate(110px, -20px);
+  background-color: #f5f4ed;
+}
+.b-register a{
+  text-decoration: none;
+  color: #000000;
+  align-items: center;
+}
+@media screen and (max-width:800px) {
+  .b-register{
+    transform: translate(230px, -25px);
+  }
 }
 
 
@@ -473,14 +461,14 @@ img {
   font-size: 14px;
   font-weight: 600;
   color: #333;
-  transform: translate(-10%, -110%);
+  transform: translate(-10%, -160%);
 
 }
 .job {
   font-size: 12px;
   font-weight: 400;
   color: #333;
-  transform: translate(-25%, -100%);
+  transform: translate(-25%, -200%);
 }
 @media screen and (max-width: 690px) {
   .image {
