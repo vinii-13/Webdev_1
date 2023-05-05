@@ -387,6 +387,10 @@ img {
   color: #000000;
   align-items: center;
 }
+.b-register a:hover {
+  color: #f44336;
+  transition: top 0.5s, opacity 0.5s;
+}
 @media screen and (max-width:800px) {
   .b-register{
     transform: translate(230px, -25px);
