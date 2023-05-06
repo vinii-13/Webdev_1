@@ -195,10 +195,10 @@ i {
   color: #fff;
   transition: top 0.5s, opacity 0.5s;
 }
-.cu-btn::after {
-  content: "";
+/* .cu-btn::after {
+  content: ""; */
   /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
-  width: 100%;
+  /* width: 100%;
   height: 40px;
   border-radius: 12px;
   position: absolute;
@@ -210,13 +210,13 @@ i {
   background: #f44336;
   display: block;
   margin: auto;
-  transition: top 0.5s, opacity 0.5s;
-}
-.cu-btn:hover::after {
+  transition: top 0.5s, opacity 0.5s; */
+/* } */
+/* .cu-btn:hover::after {
   width: 100%;
   top: 50%;
   opacity: 1;
-}
+} */
 
 nav .fa {
   opacity: 0;
@@ -286,6 +286,7 @@ nav .fa {
 /*..............................................................................................................................................................*/
 /* cards trial 3=successful*/
 .adventure-cards {
+  display: contents;
   margin-top: 10px;
   width: 100%;
   text-align: center;
@@ -295,6 +296,7 @@ nav .fa {
 }
 .last {
   padding-top: 20px;
+  width: 40vw;
 }
 .cards {
   width: 80%;
