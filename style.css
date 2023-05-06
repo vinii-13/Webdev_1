@@ -497,6 +497,19 @@ img {
     padding-top: 10px;
   }
 }
+@media screen and (max-width: 400px) {
+  .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+    transform: translate(175%, -15%);
+  }
+  .quote-icon {
+    transform: translate(155%, -70%);
+  }
+}
 
 /*...............................ABOUT-US......................................................................*/
 .About-Us{
@@ -626,6 +639,7 @@ footer {
     position:inherit;
   }
 }
+
 .footer-distributed {
   box-sizing: border-box;
   max-width: 100%;
