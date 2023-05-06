@@ -13,7 +13,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   
-  background-image: url(images/spiral\ background.svg); 
+  background-image: url(images/Vector\ \(1\).png); 
 }
 
 body {
@@ -389,6 +389,10 @@ img {
   color: #000000;
   align-items: center;
 }
+.b-register a:hover {
+  color: #f44336;
+  transition: top 0.5s, opacity 0.5s;
+}
 @media screen and (max-width:800px) {
   .b-register{
     transform: translate(230px, -25px);
@@ -629,7 +633,7 @@ footer {
   max-width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 50px 60px 60px 50px;
+  padding: 60px 60px 60px 50px;
   margin-top: 80px;
 }
 .footer-row{
@@ -671,7 +675,7 @@ flex-direction: column;
   margin: 0;
 }
 .footer-center {
-  width: 35%;
+  width: 30%;
 }
 .footer-center i {
   background-color: #33383b;
@@ -682,7 +686,7 @@ flex-direction: column;
   border-radius: 50%;
   text-align: center;
   line-height: 42px;
-  margin: 10px 15px;
+  margin: 20px 15px;
   vertical-align: middle;
 }
 .footer-center i.fa-envelop {
