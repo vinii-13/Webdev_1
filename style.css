@@ -29,6 +29,8 @@ body {
 /**-------------------------H E A D E R-----------------------------------------*/
 @media screen and (max-width: 480px){
   html,body {
+    
+    background-color: #f5f4ed;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -322,15 +324,18 @@ nav .fa {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
   margin: 3%;
+  color: #636363;
+
 }
-.card {
+/* .card {
   background-color: #f5f4ed;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-}
+} */
 .container {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85, 0 100%);
+  filter: drop-shadow(6px 8px 6px rgba(0, 0, 0, 0.53));
 }
 img {
   width: 100%;
@@ -361,7 +366,7 @@ img {
 
 
 /*.................................................................................................*/
-.card1 > .container:after {
+/* .card1 > .container:after {
   background-image: linear-gradient(135deg, #fff, #f44336);
 }
 .card2 > .container:after {
@@ -378,7 +383,7 @@ img {
 }
 .card6 > .container:after {
   background-image: linear-gradient(135deg, #fff, #f44336);
-}
+} */
 .details {
   padding: 20px 10px;
 }
@@ -389,7 +394,7 @@ img {
   margin: 10px 0 15px 0;
 }
 .details > p {
-  color: #000000;
+  color: #636363;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -410,7 +415,7 @@ img {
   width: 110px;
   height: 50px;
   transform: translate(110px, -17px);
-  background-color: #f5f4ed;
+  /* background-color: #f5f4ed; */
   text-decoration: none;
   color: #000000;
   align-items: center;
@@ -435,6 +440,9 @@ img {
   }
   .b-register:hover{
     transform: translate(250px, -17px);
+  }
+  .details > p{
+    font-size: px;
   }
 }
 
