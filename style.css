@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
   
   background-image: url(images/Vector\ \(1\).png); 
 }
@@ -293,10 +294,13 @@ nav .fa {
 }
 .first {
   font-size: 55px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  height: 50px;
 }
 .last {
-  padding-top: 20px;
-  width: 80%;
+  width: 614px;
+  padding: 30px 100px 0px 100px;
 }
 .cards {
   width: 80%;
@@ -331,6 +335,18 @@ img {
   border-radius: 20px;
   opacity: 0.7;
 }
+@media screen and (max-width: 700px) {
+  .first{
+      font-size: 35px;
+  }
+  .last{
+      padding: 30px 25px 0px 15px;
+      font-size: 13px;
+      font-weight: 500;
+      width: 430px;
+  }
+}
+
 
 /*.................................................................................................*/
 .card1 > .container:after {
@@ -378,24 +394,46 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 40px;
-  width: 150px;
+  padding: 0px 10px;
+  width: 110px;
   height: 50px;
-  transform: translate(110px, -20px);
+  transform: translate(122px, -17px);
   background-color: #f5f4ed;
+  text-decoration: none;
+  color: #000000;
+  align-items: center;
 }
 .b-register a{
   text-decoration: none;
   color: #000000;
   align-items: center;
 }
-.b-register a:hover {
-  color: #f44336;
+.b-register :hover{
+  color: white;
+  font-weight: b;
+}
+.b-register:hover {background: #f0582b;
+  font-weight: 600;
+  box-shadow: 0px 4px 60px rgba(240, 88, 43, 0.25);
+  border-radius: 40px;
+  color: #fff;
   transition: top 0.5s, opacity 0.5s;
+  padding: 0px 10px;
+  width: 110px;
+  height: 50px;
+  transform: translate(122px, -17px);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #f0582b;
 }
 @media screen and (max-width:800px) {
   .b-register{
-    transform: translate(230px, -25px);
+    transform: translate(250px, -17px);
+  }
+  .b-register:hover{
+    transform: translate(250px, -17px);
   }
 }
 
@@ -649,6 +687,7 @@ footer {
   font: bold 16px sans-serif;
   padding: 60px 60px 60px 50px;
   margin-top: 80px;
+  text-align: center;
 }
 .footer-row{
     display: flex;
@@ -662,6 +701,7 @@ footer {
   display: flex;
 flex-direction: column;
   vertical-align: top;
+  justify-content: center;
 }
 .footer-left {
   width: 35%;
@@ -686,7 +726,8 @@ flex-direction: column;
   color: #8f9296;
   font-size: 14px;
   font-weight: normal;
-  margin: 0;
+  padding-top: 20px;
+  margin: auto
 }
 .footer-center {
   width: 30%;
