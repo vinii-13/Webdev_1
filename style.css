@@ -330,6 +330,7 @@ nav .fa {
 .card {
   display: grid;
   grid-row: repeat(3, 1fr);
+  height:650px;
 }
 .container {
   position: relative;
