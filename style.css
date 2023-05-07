@@ -409,7 +409,7 @@ img {
   padding: 0px 10px;
   width: 110px;
   height: 50px;
-  transform: translate(122px, -17px);
+  transform: translate(110px, -17px);
   background-color: #f5f4ed;
   text-decoration: none;
   color: #000000;
@@ -427,18 +427,7 @@ img {
 .b-register:hover {background: #f0582b;
   font-weight: 600;
   box-shadow: 0px 4px 60px rgba(240, 88, 43, 0.25);
-  border-radius: 40px;
   color: #fff;
-  transition: top 0.5s, opacity 0.5s;
-  padding: 0px 10px;
-  width: 110px;
-  height: 50px;
-  transform: translate(122px, -17px);
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  border: 1px solid #f0582b;
 }
 @media screen and (max-width:800px) {
   .b-register{
