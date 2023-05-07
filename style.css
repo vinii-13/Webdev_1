@@ -327,11 +327,10 @@ nav .fa {
   color: #636363;
 
 }
-/* .card {
-  background-color: #f5f4ed;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-} */
+.card {
+  display: grid;
+  grid-row: repeat(3, 1fr);
+}
 .container {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85, 0 100%);
@@ -414,7 +413,8 @@ img {
   padding: 0px 10px;
   width: 110px;
   height: 50px;
-  transform: translate(110px, -17px);
+  justify-self: center;
+  /* transform: translate(110px, -17px); */
   /* background-color: #f5f4ed; */
   text-decoration: none;
   color: #000000;
