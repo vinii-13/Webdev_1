@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    background-image: url(images/Vector\ \(1\).png); 
+  }
+  
+  body {
+    background-color: #ffffff;
+    height: 100vh;
+    overflow-x: hidden;
+    place-items: center center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  } 
+  
+
+
+
+@media screen and (max-width: 480px){
+    html,body {
+      
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  }
+  .header {
+    width: 95%;
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    margin: 2em 1em;
+  }
+  nav {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    display: flex;
+    padding: 1em 2em;
+    align-items: center;
+  }
+  nav img {
+    width: 250px;
+  }
+  .nav-links {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    flex: 1;
+    text-align: right;
+    justify-content: end;
+  
+    /* background: rgba(195, 10, 10, 0.8); */
+  }
+  .nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+  }
+  /* .nav-links ul li {
+      color: #000000;
+      text-decoration: none;
+      font-size: px;
+  } */
+  .nav-links ul li a {
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .nav-links ul li a b {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  i {
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+  }
+  .nav-links ul li a:hover {
+    color: #fff;
+    transition: top 0.5s, opacity 0.5s;
+  }
+  .nav-links ul li::after {
+    content: "";
+    /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
+    width: 95%;
+    height: 50px;
+    border-radius: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    background: #F0582B;
+    display: block;
+    margin: auto;
+    transition: top 0.5s, opacity 0.5s;
+  }
+  .nav-links ul li:hover {
+    color: #F0582B;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+    top: 50%;
+    opacity: 1;
+    color: whi;
+  }
+
+
+/* ....................... content.................... */
+
+.content{
+    display: flex;
+    width: 100%-4em;
+    position: relative;
+    justify-content: space-around;
+    height: 50em;
+    margin:0px 2em ;
+    
+}
+
+.info{
+    justify-self: flex-start;
+    background: #FFD0C2;
+    border-radius: 46px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1{
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 2em;
+    font-weight: 700;
+}
+
+.info div h3{
+    font-size: 1.3em;
+    color: #000000;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.info div ul li{
+    font-size: 0.75em;
+    color: #000000;
+    font-weight: 300;
+}
+
+.info a{
+    text-decoration: none;
+    color: #004fbe;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1em;
+    align-self: flex-start;
+}
+
+.info a:hover{
+    color: #F0582B;
+}
+
+.info h2{
+    font-size: 1.4em;
+    color: #000000;
+    margin-top: 1.2em;
+    font-weight: 600;
+    align-self: center;
+}
+
+.formm{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.formm h1{
+    font-size: 2em;
+    color: #F0582B;
+    margin-bottom: 2em;
+    font-weight: 700;
+    align-self: center;
+    margin-top: 2em;
+}
+
+.formm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.formm form input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 1em 0em;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5em 0em;;
+}
+
+.amount h5{
+    font-size: 1.1em;
+    color: #343434;
+    font-weight: 500;
+    margin-right: 4em;
+}
+
+.amount p{
+    color: #F0582B;
+    font-weight: 400;
+    font-size: 1em;
+    border: 0.5px solid #969696;
+    border-radius: 7px;
+    padding: 0em 4em;
+}
+
+.submit{
+    border-radius: 20px;
+    cursor: pointer;
+}
