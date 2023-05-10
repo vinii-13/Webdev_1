@@ -15,8 +15,17 @@
             <img src="images/logo-w.png" style="justify-self: flex-start;">
             <nav class="nav-links" font-family: Poppins;>
                 <ul>
-                    <li><a href="#home"><i class="fa-solid fa-house"></i><b>Home</b></a></li>
-                    <li><a href="#activity"><i class="fa-solid fa-person-hiking"></i><b>Activities</b></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i><b>Home</b></a></li>
+                    <li class="dropdown"><a class="dropbtn" href="javascript:void(0)"><i class="fa-solid fa-person-hiking"></i><b>Activities</b></i></a>
+                    <div class="dropdown-content">
+                        <a href="">Cycling</a>
+                        <a href="">Hikking</a>
+                        <a href="">Camping</a>
+                        <a href="">Himachal Treks</a>
+                        <a href="">Heritage Walk</a>
+                        <a href="">Family/Corporate/Personal Trips</a>
+                    </div>
+                    </li>
                     <li><a href="#abouttt"><i class="fa-solid fa-phone"></i><b>About us</b></a></li>
                 </ul>
             </nav>
@@ -45,23 +54,76 @@
             <div class="formm">
                 <h1>Book Your Hike</h1>
                 <form action="">
-                    <input type="text" placeholder="your name" name="name" required> <br>
-                    <input type="email" placeholder="email-address" name="email" required> <br>
-                    <div class="third">
-                        <input style="margin-right: 2em;" type="tel" placeholder="phone number" name="phone" required>
-                        <input  type="text" placeholder="occupation" name="occupation" required> <br>
+                    <input class="formin" type="text" placeholder="your name" name="name" required> <br>
+                    <input class="formin" type="email" placeholder="email-address" name="email" required> <br>
+                    <div class="third ">
+                        <input class="formin" style="margin-right: 2em;" type="tel" placeholder="phone number" name="phone" required>
+                        <input  class="formin" type="text" placeholder="occupation" name="occupation" required> <br>
                     </div>
 
                     <div class="amount">
                         <h5>Amount</h5>
                         <p>₹ 300</p>
                     </div>
-                    <div><input type="checkbox" name="terms" required> <label for="terms">I agree to the terms and conditions</label></div>
-                    <input class="submit" type="submit" value="Book Now">
+                    <div><input type="checkbox" name="terms" required> <label for="terms">I agree to the <span style="color: blue;"><a href="#"> terms and conditions </a></span></label></div>
+                    <input class="submit" type="submit" value="Continue to Payment">
                 </form>
             </div>
 
         </div>
+
+
+        <!-------------------------------------F.O.O.T.E.R------------------------------------------------->
+    <footer class="footer-distributed">
+        <div class="footer-row">
+            <div class="footer-left">
+                <img class="footer-logo" src="images/logo.png" alt="">
+                <h3 style="font-weight: 700;">HUNTER HIKERS</h3>
+                <p class="footer-links">
+                    <a href="#home">home</a>
+                    |
+                    <a href="#abouttt">about</a>
+                    |
+                    <a href="#home">contact</a>
+                    |
+                    <a href="#blog">blog</a>
+                </p>
+
+            </div>
+            <div class="footer-center" style="text-align: center;">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Jaipur</span>
+                        Rajasthan</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 9079674368</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>info.hunterhikers@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    <strong>HUNTER HIKERS</strong> is a leading outdoor adventure, trekking and tour company in Jaipur.<br><br>
+                    We are professionally trained team - certified Tourist Facilitator, Mountaineer, Rescue & First Aid, Drone Pilot - comitted to your safety and enjoyment. 
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/hunterhikers/?hl=en"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hunterhikers/"><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href="https://youtube.com/@Hunterhikers"><i class="fa fa-youtube"></i></a>
+
+                </div>
+            </div>
+            <p class="footer-company-name">Copyright©2018 <strong>Hunter Hikers</strong>
+                All rights reserved</p>
+        </div>
+    </footer>
     
 </body>
 </html>
