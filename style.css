@@ -91,16 +91,17 @@ nav img {
   color: black;
   font-size: 18px;
 }
+.nav-links ul li a:hover {
+    color: #fff;
+    transition: top 0.5s, opacity 0.5s;
+  }
 .nav-links ul li a b {
   font-weight: 600;
 }
 i {
   margin-right: 8px;
 }
-.nav-links ul li a:hover {
-  color: #fff;
-  transition: top 0.5s, opacity 0.5s;
-}
+
 .nav-links ul li::after {
   content: "";
   /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
@@ -113,19 +114,17 @@ i {
   transform: translate(-50%, -50%);
   z-index: -1;
   opacity: 0;
-  background: #F0582B;
   display: block;
   margin: auto;
   transition: top 0.5s, opacity 0.5s;
 }
-.nav-links ul li:hover {
-  color: #F0582B;
-}
+
 .nav-links ul li:hover::after {
   width: 100%;
   top: 50%;
   opacity: 1;
-  color: whi;
+  color: white;
+  background: #F0582B;
 }
 
 .text-box {
