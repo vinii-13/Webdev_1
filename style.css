@@ -210,28 +210,6 @@ i {
   color: #fff;
   transition: top 0.5s, opacity 0.5s;
 }
-/* .cu-btn::after {
-  content: ""; */
-  /* width: 100% pe red lines were visible and now on 0% sirf cursor laane pe will be visible*/
-  /* width: 100%;
-  height: 40px;
-  border-radius: 12px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  opacity: 0;
-  background: #f44336;
-  display: block;
-  margin: auto;
-  transition: top 0.5s, opacity 0.5s; */
-/* } */
-/* .cu-btn:hover::after {
-  width: 100%;
-  top: 50%;
-  opacity: 1;
-} */
 
 nav .fa {
   opacity: 0;
@@ -296,7 +274,10 @@ nav .fa {
   border-radius: 50px;
   max-height: 150px;
   max-width: 100%;
+  background-color: white;
   box-shadow: #373737;
+  filter: drop-shadow(6px 8px 6px rgba(0, 0, 0, 0.53));
+
 }
 .p1{
   width: 100%;
@@ -362,27 +343,25 @@ nav .fa {
 .card {
   display: grid;
   grid-row: repeat(3, 1fr);
-  height:650px;
+  height:500px;
 }
-.container {
+.container 
+{
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85, 0 100%);
+  height: 300%;
+  width: 100%;
   filter: drop-shadow(6px 8px 6px rgba(0, 0, 0, 0.53));
 }
-img {
+.container img {
   width: 100%;
-  display: block;
+  height: 300px; 
   border-radius: 20px;
 }
-.container:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 20px;
-  opacity: 0.7;
+.img3{
+  object-fit:cover;
+}
+.img6{
+  object-fit:cover;
 }
 @media screen and (max-width: 700px) {
   .first{
@@ -398,26 +377,9 @@ img {
 
 
 /*.................................................................................................*/
-/* .card1 > .container:after {
-  background-image: linear-gradient(135deg, #fff, #f44336);
-}
-.card2 > .container:after {
-  background-image: linear-gradient(135deg, #fff, #f44336);
-}
-.card3 > .container:after {
-  background-image: linear-gradient(135deg, #fff, #f44336);
-}
-.card4 > .container:after {
-  background-image: linear-gradient(135deg, #fff, #f44336);
-}
-.card5 > .container:after {
-  background-image: linear-gradient(135deg, #fff, #f44336);
-}
-.card6 > .container:after {
-  background-image: linear-gradient(135deg, #fff, #f44336);
-} */
+
 .details {
-  padding: 20px 10px;
+  padding: 0px 10px;
 }
 .details > h3 {
   color: #000000;
@@ -641,7 +603,7 @@ font-weight: 600;
   justify-content: center;
   align-items: center;
 }
-.a_card-img {
+.a_card-img img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -676,14 +638,14 @@ p {
   justify-content: center;
 }
 
-button {
-  margin: 12px 8px;
+.instagram {
+  margin: 2px 8px;
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  transition: opacity 0.9s;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 button:hover {
   opacity: 0.8;
@@ -919,7 +881,7 @@ flex-direction: column;
   margin-right: 3px;
   margin-bottom: 5px;
 }
-.fa-instagram:hover {
+.footer-icons .fa-instagram:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);}
 .footer-links a:hover {
   color: #f44336;
