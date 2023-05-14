@@ -53,19 +53,19 @@
 
             <div class="formm">
                 <h1>Book Your Hike</h1>
-                <form action="">
-                    <input class="formin" type="text" placeholder="your name" name="name" required> <br>
-                    <input class="formin" type="email" placeholder="email-address" name="email" required> <br>
+                <form action="" id="formdb">
+                    <input class="formin" type="text" placeholder="your name" id="name" required> <br>
+                    <input class="formin" type="email" placeholder="email-address" id="email" required> <br>
                     <div class="third ">
-                        <input class="formin" style="margin-right: 2em;" type="tel" placeholder="phone number" name="phone" required>
-                        <input  class="formin" type="text" placeholder="occupation" name="occupation" required> <br>
+                        <input class="formin" style="margin-right: 2em;" type="tel" placeholder="phone number" id="phone" required>
+                        <input  class="formin" type="text" placeholder="occupation" id="occupation" required> <br>
                     </div>
 
                     <div class="amount">
-                        <h5>Amount</h5>
+                        <h5>Amount</h5> 
                         <p>₹ 300</p>
                     </div>
-                    <div><input type="checkbox" name="terms" required> <label for="terms">I agree to the <span style="color: blue;"><a href="#"> terms and conditions </a></span></label></div>
+                    <div><input type="checkbox" id="terms" required> <label for="terms">I agree to the <span style="color: blue;"><a href="#"> terms and conditions </a></span></label></div>
                     <input class="submit" type="submit" value="Continue to Payment">
                 </form>
             </div>
@@ -126,4 +126,7 @@
     </footer>
     
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="form.js"></script>
 </html>
