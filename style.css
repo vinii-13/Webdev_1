@@ -442,7 +442,7 @@ nav .fa {
 }
 
 
-/*.................................................................testimonials take 2=successful................................................................*/
+/*.................................................................testimonials take 2=successful................................................................
 .textt{
   font-size: 50px;
   padding-top: 100px;
@@ -456,7 +456,7 @@ nav .fa {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #f5f4ed; */
+  
 }
 .testimonial {
   position: relative;
@@ -559,7 +559,7 @@ nav .fa {
   .quote-icon {
     transform: translate(155%, -70%);
   }
-}
+} */
 
 /*...............................ABOUT-US......................................................................*/
 .About-Us{
