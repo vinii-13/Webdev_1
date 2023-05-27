@@ -38,7 +38,7 @@
     .content{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         position: relative;
         
     }
@@ -223,10 +223,20 @@
     align-self: center;
 }
 
+.poster {
+    max-height: 450px;
+    max-width: 450px;
+    align-self: center;
+  
+  
+}
+
+
 .formm{
     padding: 3em;
     display: flex;
     flex-direction: column;
+    width: 35%;
 }
 
 .formm h1{
@@ -265,6 +275,14 @@
     margin-right: 4em;
 }
 
+.third{
+    display: flex;
+    justify-content: space-between;
+}
+
+.third .formin{
+    width: 45%;
+}
 .amount p{
     color: #F0582B;
     font-weight: 400;
@@ -312,6 +330,31 @@ footer {
     position:inherit;
   }
 }
+
+@media (max-width: 1000px) {
+  
+  .content {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .info {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+  .formm {
+    width: 90%;
+    align-self: center;
+  }
+  .formdb {
+    width: 80%;
+  }
+  .submit{
+    font-size: 1em;
+  }
+}
+  
+
 
 .footer-distributed {
   box-sizing: border-box;
@@ -478,3 +521,48 @@ flex-direction: column;
     margin-left: 0;
   }
 }
+
+
+/* ..............................................................................FOOTER................................................................................*/
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
