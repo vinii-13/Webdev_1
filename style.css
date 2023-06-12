@@ -311,6 +311,18 @@ nav .fa {
   border-radius: 50%;
 }
 
+
+@media screen and (max-width: 1500){
+    .partnered-with{
+      width: 100%;
+      height: 400px;
+    }
+    .partners{
+      display: flex;
+      flex-direction: row;
+    }
+  
+}
 /*..............................................................................................................................................................*/
 /* cards trial 3=successful*/
 .adventure-cards {

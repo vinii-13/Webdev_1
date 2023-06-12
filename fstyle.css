@@ -42,6 +42,17 @@
         position: relative;
         
     }
+    .header{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-links ul li{
+      display: block;
+      text-align: center;
+      padding: 1em 0em;
+    } 
+
   }
   .header {
     width: 95%;
@@ -351,6 +362,20 @@ footer {
   }
   .submit{
     font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .poster{
+    max-width: 300px;
+    max-height: 300px;
+
+  }
+  .content{
+    height: auto;
+    justify-self: center;
+    width: 80%;
   }
 }
   
