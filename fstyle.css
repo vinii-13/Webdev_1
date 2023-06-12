@@ -15,8 +15,6 @@
   
   body {
     background-color: #ffffff;
-    height: 100vh;
-    overflow-x: hidden;
     place-items: center center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   } 
@@ -38,7 +36,7 @@
     .content{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         position: relative;
         
     }
@@ -47,10 +45,11 @@
       align-items: center;
       justify-content: center;
     }
-    .nav-links ul li{
-      display: block;
-      text-align: center;
-      padding: 1em 0em;
+    .linav{
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+      justify-content: space-between;
     } 
 
   }
@@ -60,6 +59,7 @@
     display: flex;
     align-self: flex-start;
     margin: 2em 1em;
+    justify-content: space-between;
   }
   nav {
     font-family: "Poppins", sans-serif;
@@ -98,6 +98,7 @@
     text-decoration: none;
     color: black;
     font-size: 18px;
+    margin: 0px 40px;
   }
   .nav-links ul li a b {
     font-weight: 500;
@@ -235,8 +236,8 @@
 }
 
 .poster {
-    max-height: 450px;
-    max-width: 450px;
+    max-height: 400px;
+    max-width: 400px;
     align-self: center;
   
   
@@ -375,7 +376,7 @@ footer {
   .content{
     height: auto;
     justify-self: center;
-    width: 80%;
+    width: 90%;
   }
   .info {
     width: 100%;
@@ -519,7 +520,6 @@ flex-direction: column;
   width: 90px;
   padding-bottom: 10px;
   box-align: left;
-  padding-left: 40%;
 }
 
 @media (max-width: 767px) {
