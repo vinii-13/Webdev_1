@@ -16,3 +16,7 @@
 function videoslider(links){
   document.querySelector(".slider").src=links;
 }
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  preloader.classList.add('hide-preloader');
+});
