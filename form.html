@@ -15,20 +15,13 @@
     <body>
         <section class="header">
            <a href="index.html"><img src="images/logo-w.png" style="justify-self: flex-start;"></a> 
-            <nav class="nav-links" font-family: poppins;>
-                <ul>
-                    <li class="linav">
-                        <a href="index.html">
-                            <i class="fa-solid fa-house"></i>
-                            <b>Home</b>
-                        </a>
-                        <a href="#footer">
-                            <i class="fa-solid fa-phone"></i>
-                            <b>Contact us</b>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+           <div class="nav-links" font-family: Poppins;>
+            <!-- <i class="fa fa-xmark"></i> -->
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><b>Home</b></a></li>
+                <li><a href="#footer"><i class="fa-solid fa-phone"></i><b>Contact Us</b></a></li>
+            </ul>
+        </div>
         </section>
 
         <div class="content">
@@ -56,7 +49,7 @@
 
             <div class="formm">
                 <h1>Book Your Hike</h1>
-                <form action="" id="formdb">
+                <form action="payments.php" method="post" action="payments.php" id="formdb">
                   <input class="formin" type="text" placeholder="your name" id="name" required>
                   <br>
                   <input class="formin" type="email" placeholder="email-address" id="email" required>

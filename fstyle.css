@@ -76,9 +76,11 @@
     font-weight: 400;
     flex: 1;
     text-align: right;
-    justify-content: end;
   
     /* background: rgba(195, 10, 10, 0.8); */
+  }
+  .nav ul{
+    display: flex;
   }
   .nav-links ul li {
     list-style-type: none;
@@ -94,11 +96,10 @@
       font-size: px;
   } */
   .nav-links ul li a {
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
     color: black;
     font-size: 18px;
-    margin: 0px 40px;
   }
   .nav-links ul li a b {
     font-weight: 500;
