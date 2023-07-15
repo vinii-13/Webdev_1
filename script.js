@@ -13,6 +13,12 @@
   },
 });
 */
+
+function videoslider(links){
+  document.querySelector(".slider").src=links;
+}
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
