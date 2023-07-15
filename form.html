@@ -11,6 +11,43 @@
         <title>Hunter Hikers-Hike Registration</title>
         <link rel="icon" href="images/logo.png">
 
+        <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      /* Start client-defined Callback Handler Functions */
+      function onOpenHandler () {
+        alert('Payments Modal is Opened');
+      }
+
+      function onCloseHandler () {
+        alert('Payments Modal is Closed');
+      }
+
+      function onPaymentSuccessHandler (response) {
+        alert('Payment Success');
+        console.log('Payment Success Response', response);
+      }
+
+      function onPaymentFailureHandler (response) {
+        alert('Payment Failure');
+        console.log('Payment Failure Response', response);
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        handlers: {
+          onOpen: onOpenHandler,
+          onClose: onCloseHandler,
+          onSuccess: onPaymentSuccessHandler,
+          onFailure: onPaymentFailureHandler
+        }
+      });
+      
+      function onButtonClick() {
+        Instamojo.open('http://test.instamojo.com/@vartika_21bcon128');
+      }
+    </script>
+
     </head>
     <body>
         <section class="header">
@@ -49,7 +86,7 @@
 
             <div class="formm">
                 <h1>Book Your Hike</h1>
-                <form action="payments.php" method="post" action="payments.php" id="formdb">
+                <form action="pay.php" method="post" id="formdb">
                   <input class="formin" type="text" placeholder="your name" id="name" required>
                   <br>
                   <input class="formin" type="email" placeholder="email-address" id="email" required>
@@ -71,7 +108,7 @@
                       </span>
                     </label>
                   </div>
-                  <button type="submit" class="submit" onclick="initiatePayment(event)">Continue to Payment</button>
+                  <button type="submit" id="pay" class="submit"  onclick="onButtonClick()" >Continue to Payment</button>
                 </form>
             </div>
               
